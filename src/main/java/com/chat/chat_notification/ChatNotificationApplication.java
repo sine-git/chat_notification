@@ -23,7 +23,7 @@ public class ChatNotificationApplication {
 
     @Bean
     public FirebaseApp firebaseApp() throws IOException {
-        Resource resource = new ClassPathResource("chattingappiirre.json");
+
 
         // Utiliser InputStream pour une meilleure portabilité
 
