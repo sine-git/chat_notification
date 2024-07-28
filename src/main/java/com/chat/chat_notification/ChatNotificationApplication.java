@@ -29,7 +29,7 @@ public class ChatNotificationApplication {
 
         String firebaseConfig = System.getenv("FIREBASE_CONFIG");
 
-        if (firebaseConfig != null){
+     /*   if (firebaseConfig != null){
             ByteArrayInputStream serviceAccountEnv = new ByteArrayInputStream(firebaseConfig.getBytes());
 
             if (serviceAccountEnv == null) {
@@ -45,8 +45,8 @@ public class ChatNotificationApplication {
 
             return FirebaseApp.initializeApp(options,"Chatting App");
         }
-
-        else  {
+*/
+      //  else  {
             ClassPathResource serviceAccount =
                     new ClassPathResource("chattingapp.json");
             if (serviceAccount == null) {
@@ -61,7 +61,7 @@ public class ChatNotificationApplication {
                     .build();
 
             return FirebaseApp.initializeApp(options,"Chatting App");
-        }
+    //    }
 
 
         }
